@@ -225,6 +225,44 @@ console.log(el2)
  console.log(byclass)
  el2.innerText="Java is fun";
  el2.innerText="Hello "
+ el2.style.color='black';
+ const newElement=document.createElement('h2')
+ newElement.innerText='New element add to dom';
+ document.querySelector("body").appendChild(newElement)
+
+ const ulList=document.createElement('ul')
+ const l1=document.createElement('li')
+ l1.innerText="Book 👔"
+ const l2=document.createElement('li')
+ l2.innerText="TV 📺"
+ const l3=document.createElement('li')
+ l3.innerText="Car 🚗"
+ document.querySelector("body").appendChild(ulList).appendChild(l1).appendChild(l2).appendChild(l3)
+
+ const fun=document.getElementById("code")
+ function handleClick(event){
+    fun.style.background="red"
+    fun.innerText='Did you Click here?'
+ }
+ fun.addEventListener("click",handleClick)
+
+// create an array of colors 10 colors
+//creat a number bewtween 0 -9
+// cache th body element
+// add event listen to it
+//each to user click on body
+//background shoul change
+let myColor=['blue','yellow','green','black','white','orange','gray','gold','silver']
+
+const body=document.querySelector("body")
+let ranNum=Math.round(Math.random()*8)
+console.log(ranNum)
+
+function onclick(){
+    body.style.background=myColor[ranNum]
+}
+body.addEventListener("click",onclick)
+
 
 
 
