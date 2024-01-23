@@ -1,4 +1,13 @@
 
 body {
-  background-color: coral;
+  background-color: blue;
+}
+h1{
+  background-color: white;
+}
+#main{
+  background-color: salmon;
+}
+.title{
+  color: royalblue;
 }
